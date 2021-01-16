@@ -1,3 +1,9 @@
-{
-  message: @index,
-}
+@accessories.map do |accessory|
+  {
+    id: accessory.id,
+    name: accessory.name,
+    price: accessory.price,
+    image_url: accessory.image_url,
+    description: accessory.description,
+  }
+end
