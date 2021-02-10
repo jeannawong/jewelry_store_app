@@ -26,7 +26,7 @@ class Api::AccessoriesController < ApplicationController
     @accessory.price = params["price"] || @accessory.price
     @accessory.image_url = params["image_url"] || @accessory.image_url
     @accessory.description = params["description"] || @accessory.description
-
+    @accessory.save
     render "show.json.jb"
   end
 
